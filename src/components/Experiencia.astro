@@ -1,0 +1,47 @@
+---
+import ExperienciaItem from "./ExperienciaItem.astro"
+const EXPERIENCE = [
+    {
+        time: 'JUNIO 2024 - JUNIO 2025',
+        title: 'Soporte TI',
+        description: "Fui Soporte TI, brindando asistencia a los usuarios, donde descato la creacion de una App Movil utilizando AppShet para el control de inventarios de equipos de computo",
+        //link: '#',
+        last: true
+
+    },
+    {
+        time: 'ENERO 2024 - MAYO 2024',
+        title: 'Diseñador UX/UI',
+        description: "Colabore en el area de Departamento Operativo, diseñando y maquetando paginas webs, landing pages, blogs",
+
+    },
+    {
+        time: 'OCTUBRE 2022 - DICIEMBRE 2022',
+        title: 'Practicante Pre - Profesional',
+        description: "Practicante de la Unidad de Informatica y Soporte Tecnico, apoye en el mantenimiento y actualizacion de la pagina web del municipio",
+
+    }
+]
+
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 px-4 sm:px-6 ml-3 "> 
+
+    {
+        EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienciaItem {... experience}   />
+            </li> 
+        ))
+    }
+
+
+
+</ol>
+
+
+
+
+
+

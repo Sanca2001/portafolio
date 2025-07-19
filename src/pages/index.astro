@@ -1,0 +1,113 @@
+---
+import Badge from "../components/Badge.astro";
+import Linkedin from "../icons/Linkedin.astro";
+import Correo from "../icons/Correo.astro";
+
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+import SocialPill from "../components/SocialPill.astro";
+import Experiencia from "../components/Experiencia.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Footer from "../components/Footer.astro";
+import BriefCase from "../icons/BriefCase.astro";
+import CodeIcon from "../icons/CodeIcon.astro";
+import AboutIcon from "../icons/AboutIcon.astro";
+import Projects from "../components/Projects.astro";
+
+---
+
+<Layout title="Portafolio de Enrique - Desarrollador y Programador Web" >
+
+	<main class="">
+
+		<SectionContainer class="pt-20" >
+			<div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        		<img src="/public/images/logo_2.png" alt="Logo" class="rounded-full w-16 h-16"/>
+        		<Badge> Disponible para trabajar </Badge>
+      		</div>
+
+			<h1 class="text-3xl sm:text-4xl font-bold mt-6">
+				Hola soy Enrique Sandoval</h1>
+
+			<h2 class="text-base sm:text-lg mt-4 text-gray-700 dark:text-gray-300">
+				Desarrollador Frontend con experiencia en la creación de interfaces
+				modernas, accesibles y responsivas usando tecnologías como HTML, CSS,
+				JavaScript y frameworks como React y Vue.js.
+			</h2>
+
+			<div class="mt-6 flex flex-col sm:flex-row gap-4">
+
+				<SocialPill href="https://www.linkedin.com/in/enrique-sanca">
+					<Linkedin class="size-6"  /> 
+					Linkedin
+				</SocialPill>
+
+				<SocialPill href="">
+					<Correo class="size-6" />
+					absalonsandoval56@gmail.com
+				</SocialPill>
+      		</div>
+
+
+		</SectionContainer>
+
+		<SectionContainer id="experiencia" >
+			<h2 class="flex items-center mb-6 text-2xl sm:text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">  
+				<BriefCase class="size-8"   />
+				Experiencia laboral
+			</h2>
+			<Experiencia   />
+
+
+		</SectionContainer>
+
+
+		<SectionContainer id="proyectos">
+			<h2 class="flex items-center mb-6 text-2xl sm:text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"> 
+
+				<CodeIcon class="" />				
+				Proyectos
+			</h2>
+
+
+			<Projects />
+
+
+
+
+		</SectionContainer>
+
+
+		<SectionContainer id="sobremi">
+			<h2 class="flex items-center mb-6 text-2xl sm:text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">  
+				<AboutIcon class="size-8" />
+				
+				Sobre Mi
+			</h2>
+
+			<div class="flex flex-col md:flex-row px-4 sm:px-6 lg:px-0 max-w-4xl mx-auto mt-10">
+				<article class="text-base text-gray-700 dark:text-gray-300 leading-relaxed" >
+					<p>
+						Bachiller en Ciencias de la Computación, soy un profesional impulsado por un constante deseo de aprendizaje, lo 
+						que me permite mantenerme actualizado sobre las últimas tendencias del sector tecnológico. Destaco por mi 
+						creatividad y capacidad para resolver problemas de manera efectiva. Poseo conocimientos y experiencia en soporte 
+						TI, programación, desarrollo web y manejo de bases de datos. Estoy comprometido con la implementación de 
+						soluciones innovadoras que generen un valor significativo para la organización.
+					</p>
+					
+				</article>
+			</div>
+
+
+		</SectionContainer>
+
+
+		<Footer >
+
+		</Footer>
+
+	</main>
+
+
+</Layout>
